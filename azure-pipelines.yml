@@ -10,8 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: Building project!
-  displayName: 'Run a one-line script'
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
