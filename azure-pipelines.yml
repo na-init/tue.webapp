@@ -8,6 +8,8 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+variables:
+  buildConfiguration : 'Release'
 
 steps:
 - task: DotNetCoreCLI@2
@@ -16,4 +18,3 @@ steps:
     command: build
     projects: '**/*.csproj'
     arguments: '--configuration Release' # Update this to match your need
-
